@@ -250,6 +250,35 @@
     }
 }
 
+/* Mobile Hero Section Spacing */
+@media (max-width: 639px) {
+    #home {
+        min-height: auto !important;
+        padding-top: 5rem !important; /* ~80px clears sticky nav comfortably */
+        padding-bottom: 2rem !important;
+        justify-content: flex-start !important;
+    }
+}
+
+/* Logofolio 3-Column Mobile Layout */
+@media (max-width: 639px) {
+    #portfolio .grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        gap: 0.625rem !important;
+    }
+
+    #portfolio .grid > div {
+        height: 5.75rem !important; /* 92px */
+        padding: 0.5rem !important;
+        border-radius: 0.875rem !important;
+    }
+
+    #portfolio .grid img {
+        max-height: 3.75rem !important; /* 60px */
+        max-width: 88% !important;
+    }
+}
+
 /* Accessibility: Skip to main content link */
 .skip-link {
     position: absolute;
