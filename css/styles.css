@@ -280,12 +280,75 @@
 }
 
 /* Ensure Bold Headline & Display Typography on Mobile */
+.font-label-bold {
+    font-weight: 700;
+}
+
 @media (max-width: 1023px) {
+    /* All headings across mobile view */
     h1,
+    h1 span,
     h2,
+    h3,
+    h4,
+    h5,
+    h6,
     .font-headline-xl,
     .font-headline-lg,
     .font-headline-md {
+        font-weight: 700 !important;
+    }
+
+    /* Hero main headline on mobile - thick, solid bold weight (800) matching desktop presence */
+    #home h1,
+    #home h1 span {
+        font-weight: 800 !important;
+        letter-spacing: -0.02em;
+    }
+
+    /* Section eyebrow badges, pill tags, and uppercase tracking labels */
+    .font-label-bold,
+    span.uppercase,
+    span[class*="tracking-widest"],
+    span[class*="tracking-wider"],
+    .tracking-widest,
+    .tracking-wider {
+        font-weight: 700 !important;
+    }
+
+    /* Hero CTA buttons and mobile navigation buttons */
+    #home a[href^="#"],
+    #mobile-menu a,
+    nav a.font-label-bold {
+        font-weight: 700 !important;
+    }
+
+    /* Stat counters on mobile (100+, 2000+, 98%, 50+) */
+    #about .text-secondary[class*="text-3xl"],
+    #about .text-secondary[class*="text-4xl"],
+    #about span.font-headline-xl {
+        font-weight: 700 !important;
+    }
+
+    /* Contact form labels, inputs, and submit button on mobile */
+    #contact-form label,
+    #contact label,
+    #contact-submit-btn {
+        font-weight: 700 !important;
+    }
+
+    /* Contact info titles and values on mobile */
+    #contact .font-bold,
+    #contact .font-semibold,
+    #contact a[href^="https://wa.me"],
+    #contact a[href*="mailto"],
+    #contact a[href*="mail.google.com"] {
+        font-weight: 700 !important;
+    }
+
+    /* Service card headers and tags on mobile */
+    #services h3,
+    #services .font-bold {
         font-weight: 700 !important;
     }
 }
