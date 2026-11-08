@@ -28,7 +28,7 @@ const reviews = [
         rating: 5
     },
     {
-        quote: "We used Glyphic to create our artists' profiles, and the designs turned out perfectly aligned with our brand guidelines. The process was smooth, and the attention to detail was fantastic. Highly recommended!",
+        quote: "We used Glyphic studio to create our artists' profiles, and the designs turned out perfectly aligned with our brand guidelines. The process was smooth, and the attention to detail was fantastic. Highly recommended!",
         name: "Aakash Mehta",
         role: "Founder",
         company: "Curry Leaf Media",

@@ -254,8 +254,8 @@
 @media (max-width: 639px) {
     #home {
         min-height: auto !important;
-        padding-top: 5rem !important; /* ~80px clears sticky nav comfortably */
-        padding-bottom: 2rem !important;
+        padding-top: 8rem !important; /* ~128px gives an ideal ~47px breathing gap below fixed navbar */
+        padding-bottom: 5.5rem !important; /* ~88px gives clean, spacious breathing room above marquee */
         justify-content: flex-start !important;
     }
 }
@@ -276,6 +276,17 @@
     #portfolio .grid img {
         max-height: 3.75rem !important; /* 60px */
         max-width: 88% !important;
+    }
+}
+
+/* Ensure Bold Headline & Display Typography on Mobile */
+@media (max-width: 1023px) {
+    h1,
+    h2,
+    .font-headline-xl,
+    .font-headline-lg,
+    .font-headline-md {
+        font-weight: 700 !important;
     }
 }
 
