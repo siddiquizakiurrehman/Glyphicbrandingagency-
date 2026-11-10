@@ -66,23 +66,8 @@ const reviews = [
         company: "52 Gates Legal",
         image: "Testimonial_Photo/Umar Kamaal Farooqui.jfif",
         rating: 5
-    },
-    {
-        quote: "Tetrix.",
-        name: "Amara Okafor",
-        role: "Founder",
-        company: "Tetrix",
-        image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=150&auto=format&fit=crop&q=80",
-        rating: 5
-    },
-    {
-        quote: "Professionalism, creativity, and speed. Glyphic Studio transformed our traditional brand into a modern, sophisticated identity that commands respect.",
-        name: "Julian Mercer",
-        role: "Executive Director",
-        company: "Horizon Legal Partners",
-        image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&auto=format&fit=crop&q=80",
-        rating: 5
     }
+    
 ];
 
 function initTestimonialsMarquee() {
