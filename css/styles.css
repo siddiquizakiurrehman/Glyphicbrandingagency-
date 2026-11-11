@@ -237,8 +237,26 @@
     }
 }
 
-.reviews-marquee-container:hover .reviews-marquee-track {
-    animation-play-state: paused;
+/* On desktop / fine pointer devices: hover pauses, leaving resumes */
+@media (hover: hover) and (pointer: fine) {
+    .reviews-marquee-container:hover .reviews-marquee-track {
+        animation-play-state: paused;
+    }
+}
+
+/* On mobile / touch view: disable sticky hover, support tap-to-pause and tap-to-resume */
+@media (max-width: 1023px) {
+    .reviews-marquee-container {
+        cursor: pointer;
+    }
+    .reviews-marquee-container:hover .reviews-marquee-track {
+        animation-play-state: running;
+    }
+}
+
+/* Explicit paused state (toggled on click / tap in mobile view) */
+.reviews-marquee-container.is-paused .reviews-marquee-track {
+    animation-play-state: paused !important;
 }
 
 @keyframes reviews-marquee {

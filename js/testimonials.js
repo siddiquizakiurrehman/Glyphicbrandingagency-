@@ -66,8 +66,23 @@ const reviews = [
         company: "52 Gates Legal",
         image: "Testimonial_Photo/Umar Kamaal Farooqui.jfif",
         rating: 5
+    },
+    {
+        quote: "Glyphic Studio delivered an extraordinary logo design with genuine human creativity and natural intelligence that AI simply cannot replicate, giving our brand a unique edge.",
+        name: "Adil Aziz",
+        role: "Founder",
+        company: "Alltures",
+        image: "Testimonial_Photo/AdilAziz.jfif",
+        rating: 5
+    },
+    {
+        quote: "Had a fantastic experience with Glyphic Studio in Aurangabad! Their modern, sophisticated designs, creativity, cooperation, and timely delivery made the entire process seamless.",
+        name: "Zeeshan Siddiqui",
+        role: "Founder",
+        company: "Tetrix Lifestyle",
+        image: "Testimonial_Photo/images.png",
+        rating: 5
     }
-    
 ];
 
 function initTestimonialsMarquee() {
@@ -101,6 +116,23 @@ function initTestimonialsMarquee() {
 
     track1.innerHTML = cardsHTML;
     track2.innerHTML = cardsHTML;
+
+    setupMobileTestimonialToggle();
+}
+
+/**
+ * Setup mobile tap/click-to-pause and tap/click-to-resume toggle on sliding testimonials.
+ * Preserves desktop hover behavior without changes.
+ */
+function setupMobileTestimonialToggle() {
+    const container = document.querySelector('.reviews-marquee-container');
+    if (!container) return;
+
+    container.addEventListener('click', () => {
+        if (window.innerWidth < 1024) {
+            container.classList.toggle('is-paused');
+        }
+    });
 }
 
 document.addEventListener('DOMContentLoaded', initTestimonialsMarquee);
