@@ -70,15 +70,15 @@ const reviews = [
     {
         quote: "Glyphic Studio delivered an extraordinary logo design with genuine human creativity and natural intelligence that AI simply cannot replicate, giving our brand a unique edge.",
         name: "Adil Aziz",
-        role: "Founder",
-        company: "Alltures",
+        role: "Managing Director ",
+        company: "Alltures Advisory",
         image: "Testimonial_Photo/AdilAziz.jfif",
         rating: 5
     },
     {
         quote: "Had a fantastic experience with Glyphic Studio in Aurangabad! Their modern, sophisticated designs, creativity, cooperation, and timely delivery made the entire process seamless.",
-        name: "Zeeshan Siddiqui",
-        role: "Founder",
+        name: "Talha Tabish",
+        role: "Managing Director",
         company: "Tetrix Lifestyle",
         image: "Testimonial_Photo/images.png",
         rating: 5
