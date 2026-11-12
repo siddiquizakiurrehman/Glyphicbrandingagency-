@@ -80,7 +80,7 @@ const reviews = [
         name: "Talha Tabish",
         role: "Managing Director",
         company: "Tetrix Lifestyle",
-        image: "Testimonial_Photo/images.png",
+        image: "Testimonial_Photo/tabish.png",
         rating: 5
     }
 ];
